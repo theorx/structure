@@ -1,0 +1,10 @@
+{
+  "name": "theorx/structure",
+  "type": "library",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "theorx\\Structure\\": "src/"
+    }
+  }
+}
