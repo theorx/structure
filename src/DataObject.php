@@ -193,8 +193,7 @@ class DataObject {
 
         if ($type === Node::TYPE_LIST) {
             if (!isset($this->data[$property])) {
-                echo "New list.." . PHP_EOL;
-                $this->data[$property] = new ListObject($this->structure[$property]);
+                $this->data[$property] = new ListObject($this->structure[$property]->structure);
             }
             /**
              * @var $list  ListObject

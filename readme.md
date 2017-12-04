@@ -16,6 +16,8 @@
 * Add custom descriptors for each property `S::Type->add(key, value)` - Can be used for automating
  documentation generation for data structures
 * Populating DataObject by passing an array, nested structures are automatically populated
+* Getter methods for each type (`getString`, `getFloat`, `getBoolean`, `getInteger`, `getArray`, `getList`)
+* 
 
 ## Usage
 

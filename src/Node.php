@@ -28,7 +28,7 @@ class Node {
     /**
      * @var callable
      */
-    public $validator = null;
+    private $validator = null;
 
     /**
      * @var string
@@ -43,7 +43,7 @@ class Node {
     /**
      * @var array
      */
-    public $descriptors = [];
+    private $descriptors = [];
 
     /**
      * Node constructor.

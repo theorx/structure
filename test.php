@@ -37,7 +37,8 @@ $object->populate(
             ["name" => "first"],
             ["name" => "second"],
             [
-                "age" => "second"
+                "age" => "second",
+                "a"   => [["name" => "test"]]
             ],
         ],
 
@@ -48,7 +49,7 @@ $object->populate(
 
 $end = microtime(true);
 
-print_r($object->value());
 print_r($object->validate());
+echo json_encode($object->value());
 
 echo "Time elapsed: " . ($end - $start) . PHP_EOL;
